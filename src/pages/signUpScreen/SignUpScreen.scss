@@ -37,9 +37,15 @@
     & > h4 {
       text-align: left;
       margin-top: 30px;
-      & > span {
-        color: gray;
-      }
     }
   }
+}
+
+.signUpScreen__gray {
+  color: gray;
+}
+
+.signUpScreen__link:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
