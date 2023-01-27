@@ -11,36 +11,36 @@ function HomeScreen() {
       <Nav />
       <Banner />
       <Row
-        title="NETFLIX ORIGINALS"
+        title="ORIGINAL NETFLIX"
         fetchUrl={requests.fetchNetflixOriginals}
         isLargeRow
       />{" "}
       <Row
-        title="Treding Now"
+        title="Tendência agora"
         fetchUrl={requests.fetchTreding}
       />{" "}
       <Row
-        title="Top Rated"
+        title="Mais vistos"
         fetchUrl={requests.fetchTopRated}
       />{" "}
       <Row
-        title="Action Movies"
+        title="Ação"
         fetchUrl={requests.fetchActionMovies}
       />{" "}
       <Row
-        title="Comedy Movies"
+        title="Comédia"
         fetchUrl={requests.fetchComedyMovies}
       />{" "}
       <Row
-        title="Horror Movies"
+        title="Terror/Suspense"
         fetchUrl={requests.fetchHorrorMovies}
       />{" "}
       <Row
-        title="Romance Movies"
+        title="Romance"
         fetchUrl={requests.fetchRomanceMovies}
       />{" "}
       <Row
-        title="Documentaries"
+        title="Documentários"
         fetchUrl={requests.fetchDocumentaries}
       />
     </div>

@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import './App.scss';
+import { ToastContainer } from "react-toastify";
 import HomeScreen from './pages/homeScreen/HomeScreen';
 import {
   Routes,
@@ -23,7 +24,6 @@ function App() {
           uid: userAuth.uid,
           email: userAuth.email
         }))
-        navigate("/homeScreen")
       } else {
         dispatch(logout())
         navigate("/profile")
@@ -31,10 +31,23 @@ function App() {
     });
 
     return unsubscribe;
-  }, [dispatch]);
+  }, [dispatch, navigate]);
 
   return (
     <div className='app'>
+
+      <ToastContainer
+        position="top-left"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
       <Routes>
         <Route path='/profile' element={<Login />} />
         <Route path='/homeScreen' element={<HomeScreen />} />
