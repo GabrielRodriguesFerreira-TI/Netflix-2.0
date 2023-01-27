@@ -18,3 +18,14 @@
     cursor: pointer;
   }
 }
+
+.plansScreen__currentPlan {
+  & > button {
+    background-color: gray;
+  }
+}
+
+.plansScreen__date {
+  margin-top: 10px;
+  font-weight: 600;
+}
