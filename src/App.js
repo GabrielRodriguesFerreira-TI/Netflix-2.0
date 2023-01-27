@@ -8,8 +8,8 @@ import {
 } from "react-router-dom";
 import Login from './pages/login/Login';
 import { auth } from './services/firebase';
-import { useDispatch, useSelector } from 'react-redux';
-import { login, logout, selectUser } from './features/userSlice';
+import { useDispatch } from 'react-redux';
+import { login, logout } from './features/userSlice';
 import ProfileScreen from './pages/profileScreen/ProfileScreen';
 
 function App() {
